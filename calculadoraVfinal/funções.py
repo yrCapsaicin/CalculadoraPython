@@ -21,10 +21,6 @@ def res():
             return a * b
         elif op == "/":
             return "Erro" if b == 0 else a / b
-        elif op == "^":  # Exponenciação
-            return a ** b
-        elif op == "rad":  # Radiciação genérica
-            return b ** (1/a)
         else:
             return b
     except:
