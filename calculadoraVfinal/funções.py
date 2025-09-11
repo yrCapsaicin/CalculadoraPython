@@ -7,6 +7,29 @@ aIndex = 0              # Índice para operação
 Alpha = False
 Shift = False
 
+def res():
+    try:
+        a = operation[0]
+        b = operation[2]
+        op = operation[1]
+
+        if op == "+":
+            return a + b
+        elif op == "-":
+            return a - b
+        elif op == "*":
+            return a * b
+        elif op == "/":
+            return "Erro" if b == 0 else a / b
+        elif op == "^":  # Exponenciação
+            return a ** b
+        elif op == "rad":  # Radiciação genérica
+            return b ** (1/a)
+        else:
+            return b
+    except:
+        return "Erro"
+
 def reset_values(result):
     global values, operation, aIndex
     values = ["#"]
