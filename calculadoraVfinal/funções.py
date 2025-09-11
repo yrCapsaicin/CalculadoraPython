@@ -1,5 +1,11 @@
 import math
 
+values = ["#"]          # Lista de dígitos digitados
+operation = [0, "#", 0] # [valor1, operador, valor2]
+aIndex = 0              # Índice para operação
+Alpha = False
+Shift = False
+
 def reset_values(result):
     global values, operation, aIndex
     values = ["#"]
