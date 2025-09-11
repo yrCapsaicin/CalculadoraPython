@@ -1,5 +1,6 @@
 import math
 
+# -------- Variáveis globais --------
 values = ["#"]          # Lista de dígitos digitados
 operation = [0, "#", 0] # [valor1, operador, valor2]
 aIndex = 0              # Índice para operação
